@@ -24,7 +24,7 @@ async def say(*, message:str):
 
 
 @bot.command()
-@commands.has_role("Super Sexy Admins (Suck them off if you want to stay in this server)", "Super Special Coding Nigga <333333")
+@commands.has_role("Super Special Coding Nigga <333333")
 @commands.cooldown(1, 30, commands.BucketType.user)
 async def spam(times : int, *,content:str):
     if times > 10:
