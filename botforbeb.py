@@ -18,13 +18,13 @@ async def on_member_join(user=discord.Member):
     await bot.send_message(channel, msg)
 
 @bot.command()
-@commands.has_role("Super Sexy Admins (Suck them off if you want to stay in this server)")
+@commands.has_role("Super Sexy Admins (Suck them off if you want to stay in this server)", "Super Special Coding Nigga <333333")
 async def say(*, message:str):
     await bot.send_message(discord.Object('445125257062252564'), content=message)
 
 
 @bot.command()
-@commands.has_role("Super Sexy Admins (Suck them off if you want to stay in this server)")
+@commands.has_role("Super Sexy Admins (Suck them off if you want to stay in this server)", "Super Special Coding Nigga <333333")
 @commands.cooldown(1, 30, commands.BucketType.user)
 async def spam(times : int, *,content:str):
     if times > 10:
