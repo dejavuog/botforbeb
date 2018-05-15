@@ -33,4 +33,4 @@ async def spam(times : int, *,content:str):
         for i in range(times):
             await bot.say(content)
 
-bot.run('BOT_TOKEN')
+bot.run(BOT_TOKEN)
