@@ -27,10 +27,7 @@ async def say(*, message:str):
 @commands.has_role("Super Sexy Admins (Suck them off if you want to stay in this server)")
 @commands.cooldown(1, 30, commands.BucketType.user)
 async def spam(times : int, *,content:str):
-    if times > 10:
-        await bot.say("i can only spam something 10 times nigger boi")
-    else:
-        for i in range(times):
-            await bot.say(content)
+    for i in range(times):
+        await bot.say(content)
 
 bot.run("NDQ1MTQ4MzE1MjAyNjE3MzQ0.DdsfCA.984mb9zb_nxHPpEOd2ekqrkGOzA")
