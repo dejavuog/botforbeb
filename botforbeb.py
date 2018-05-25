@@ -30,4 +30,9 @@ async def spam(times : int, *,content:str):
     for i in range(times):
         await bot.say(content)
 
+@bot.command()
+async def roll(number: int):
+    dice = random.randint(1,number)
+    await bot.say("The dice rolled " + str(dice))
+
 bot.run("NDQ1MTQ4MzE1MjAyNjE3MzQ0.DdsfCA.984mb9zb_nxHPpEOd2ekqrkGOzA")
