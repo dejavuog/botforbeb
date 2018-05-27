@@ -15,7 +15,7 @@ async def on_member_join(user=discord.Member):
     server = user.server
     memer = discord.utils.get(server.roles, name="Regular Cunts (New niggas that should be welcomed with a tit pic (in dm of course) ok?)",)
     await bot.add_roles(user, memer)
-    msg = "Alright {} listen up. You look like a fun guy which is why it'd be a shame to have to ban you so just go fucking read <#445135004826206209> and <#445135060702593025> you utter cunt and you won't wake up in a Taliban prison camp.".format(user.mention)
+    msg = "Yo {} you play Fortnite?".format(user.mention)
     await bot.send_message(channel, msg)
 
 @bot.command()
